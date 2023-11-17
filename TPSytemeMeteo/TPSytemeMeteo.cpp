@@ -85,7 +85,7 @@ TPSytemeMeteo::TPSytemeMeteo(QWidget *parent)
 		ui.afficheTemp->setText(temperatureString);
 	});
 
-	timer->start(1000);  // Démarrer le QTimer avec une période de 1000 ms (1 seconde)
+	timer->start(5000);  // Démarrer le QTimer avec une période de 5000 ms (5 secondes)
 
 }
 
