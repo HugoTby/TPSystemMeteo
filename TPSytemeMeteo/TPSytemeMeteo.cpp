@@ -1,3 +1,16 @@
+//*********************************************************************************************
+//* Programme : TPSystemMeteo.cpp                                                 Date : 17/11/2023
+//*--------------------------------------------------------------------------------------------
+//* Dernière mise à jour : 17/11/2023
+//*
+//* Programmeurs : BOTEL Faustin                                               Classe : BTSSN2
+//*                
+//*--------------------------------------------------------------------------------------------
+//* But : Récupérer les data de la k8055, les convertir en degres et envoyer en BDD
+//* Programmes associés : AUCUN
+//*********************************************************************************************
+
+
 #include "TPSytemeMeteo.h"
 #include "K8055Adapter.h"
 #include <QSqlDatabase>
@@ -58,13 +71,6 @@ TPSytemeMeteo::TPSytemeMeteo(QWidget *parent)
 		query.addBindValue(temperature);
 		query.addBindValue(currentDateTime.toString("yyyy-MM-dd HH:mm:ss"));
 		query.addBindValue(voltage);
-
-
-		// Récupérer la requête SQL en tant que QString
-		QString queryString = query.lastQuery();
-		ui.requeteSend->setText(queryString);
-		ui.requeteSend->adjustSize(); // Optionnel : ajuste la taille du QLabel pour tout afficher
-
 
 
 		if (!query.exec()) {
