@@ -19,7 +19,7 @@
      <rect>
       <x>200</x>
       <y>120</y>
-      <width>111</width>
+      <width>221</width>
       <height>51</height>
      </rect>
     </property>
@@ -43,6 +43,71 @@
     </property>
     <property name="text">
      <string>Température actuelle :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Etat de connexion à la BDD :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="connectBDD">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="erreurBDD">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>80</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>250</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Requete envoyée :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="requeteSend">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>250</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

@@ -10,7 +10,6 @@ class TPSytemeMeteo : public QMainWindow
 public:
     TPSytemeMeteo(QWidget *parent = nullptr);
     ~TPSytemeMeteo();
-	void lireTemperature();
 
 private:
     Ui::TPSytemeMeteoClass ui;
