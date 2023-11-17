@@ -1,5 +1,7 @@
 #include "TPSytemeMeteo.h"
 #include <QtWidgets/QApplication>
+#include "K8055Adapter.h"
+
 
 int main(int argc, char *argv[])
 {
